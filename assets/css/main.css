@@ -103,6 +103,7 @@ main > p {
   margin-left: 2rem;
   margin-right: 2rem;
   padding-bottom: 0.3rem;
+  margin-top: 0.3rem;
 }
 
 .list-of-taks{
@@ -115,8 +116,8 @@ main > p {
 }
 
 .list-of-task-container-child{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 0,3rem;
+  margin-bottom: 0.3rem;
   display: flex;
   justify-content: space-between;
   align-content: center;
