@@ -11,6 +11,7 @@
           </div>
         </div>
         <list-Of-Tasks/>
+        <input-data />
       </div>
     </div>
   </main>
@@ -18,6 +19,7 @@
 
 <script>
 export default {
-  name: 'IndexPage'
+ 
 }
 </script>
+

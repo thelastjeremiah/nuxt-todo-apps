@@ -98,3 +98,99 @@ main > p {
   color:white;
   padding-left: 1.2rem;
 }
+
+.list-of-task-container-parent{
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding-bottom: 0.3rem;
+}
+
+.list-of-taks{
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top:0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.list-of-task-container-child{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  border: 1px solid #1a1d1c4b;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 0.3125rem;
+}
+
+.list-of-task-container-child:hover{
+  background-color:#EDEDED;
+}
+
+.check-color{
+  color:#469c7d;
+  font-size: 1.8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top:0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.check-color:hover{
+  color:#0d553b;
+}
+
+.font-awesome-trash-icon-red{
+  padding-left: 18rem;
+  padding-right: 1rem;
+  color:white;
+  font-size:1.9rem;
+}
+
+.list-of-task-container-parent:hover .font-awesome-trash-icon-red {
+  color: #FF5C46;
+}
+
+.scrollable-wrapper{
+  max-height: 16.875rem; 
+  overflow-y: auto;
+}
+
+
+.accept-input-parent {
+  background-color: rgba(202,194,194,0.91765);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.accept-input-child {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border: 3px solid #3584c5;
+  border-radius: 30px;
+  padding: 12px;
+  width: 95%;
+}
+
+.submit-button {
+  color: #3584c5;
+  font-size: 2rem;
+  position: absolute;
+  right: 2rem;
+  cursor: pointer;
+}
+
+.submit-button:hover{
+  color: #0b4575;
+}
+
+@media (max-width: 768px) {
+  .font-awesome-trash-icon-red {
+    padding-left: 2rem;
+  }
+}
