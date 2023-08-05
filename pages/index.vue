@@ -5,9 +5,9 @@
       <div class="todo-parent-container">
         <div class="todo-child-continer">
           <div class="tasks-details">
-            <Tasks />
-            <TasksDeleteAll />
-            <TasksDone />
+            <tasks/>
+            <tasks-done/>
+            <tasks-delete-all/>
           </div>
           <p>something</p>
         </div>

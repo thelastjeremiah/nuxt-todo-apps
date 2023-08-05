@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <p>Task Done</p>
+  <div class="tasks">
+    <p>Tasks Done</p>
+    <p class="circle-number">0</p>
   </div>
 </template>
 

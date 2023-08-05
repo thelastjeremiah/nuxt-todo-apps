@@ -34,7 +34,7 @@ body {
 
 .tasks-details{
   display: flex;
-  background-color: rgb(150, 145, 145);
+  background-color: #cac2c2ea;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
