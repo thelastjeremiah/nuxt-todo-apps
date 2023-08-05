@@ -10,9 +10,9 @@
             <tasks-delete-all/>
           </div>
         </div>
-        <list-Of-Tasks/>
-        <list-Of-Tasks/>
-        <list-Of-Tasks/>
+        <div class="scrollable-wrapper">
+          <list-Of-Tasks v-for="(task, id) in listofAllTask" :key="id" :task="task"/>
+        </div>
         <input-data />
       </div>
     </div>
@@ -20,8 +20,14 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
- 
+  computed: {
+    ...mapState(['tasks']),
+    listofAllTask() {
+      return this.tasks
+    }
+  },
 }
 </script>
 
