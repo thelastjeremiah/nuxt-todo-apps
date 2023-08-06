@@ -3,8 +3,8 @@
     <div v-if="showInfo" class="show-info-container" @click="showMessage">
       <p>Show info</p>
     </div>
-    <div v-if="!showInfo" class="hide-info-contianer">
-      <p>This application uses the browser's local storage to store data</p>
+    <div v-if="!showInfo" class="hide-info-contianer no-overflow">
+      <p class="animate__animated animate__fadeInRight">This application uses the browser's local storage to store data</p>
       <font-awesome-icon icon="circle-xmark" class="x-mark" @click="closeMessage" />
     </div>
   </div>
@@ -27,3 +27,8 @@ export default {
   }
 }
 </script>
+<style>
+.no-overflow {
+  overflow: hidden;
+}
+</style>

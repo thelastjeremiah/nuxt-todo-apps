@@ -12,7 +12,7 @@
           </div>
         </div>
         <div class="scrollable-wrapper">
-          <list-Of-Tasks v-for="(task, id) in listofAllTask" :key="id" :task="task"/>
+          <list-Of-Tasks v-for="(task, id) in listofAllTask" :key="id" :task="task" class="animate__animated animate__fadeInUp"/>
         </div>
         <input-data />
       </div>
