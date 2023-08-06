@@ -140,7 +140,7 @@ main > p {
   font-weight: bold;
   &::placeholder {
     font-weight: bold;
-    color: #3584c5;
+    color: #4a5055;
   }
   &:focus {
     color: #3584c5;
@@ -259,4 +259,23 @@ main > p {
   padding-right: 1rem;
   color:white;
   font-size:1.9rem;
+}
+
+@media (max-width: 768px) {
+  .parent-container{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  main > p {
+    color:white;
+    font-size: 4rem;
+  }
+  
+.tasks > p:first-child {
+    font-size: 10px;
+  }
+.delete-task-word{
+    font-size: 10px;
+    padding-right: 1rem;
+  }
 }
