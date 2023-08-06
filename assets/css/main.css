@@ -116,7 +116,7 @@ main > p {
 
 
 .scrollable-wrapper{
-  max-height: 16.875rem; 
+  max-height: 11.25rem;
   overflow-y: auto;
 }
 
