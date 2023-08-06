@@ -7,7 +7,7 @@
           <div class="tasks-details-child">
             <tasks/>
             <tasks-done/>
-            <delete-task-done/>
+            <delete-task-done v-if="completedTaskIndexPage > 0" />
             <tasks-delete-all/>
           </div>
         </div>
@@ -21,13 +21,17 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState , mapGetters} from 'vuex'
 export default {
   computed: {
     ...mapState(['tasks']),
+    ...mapGetters(['COMPLETED_TASKS_COUNT']),
     listofAllTask() {
       return this.tasks
-    }
+    },
+    completedTaskIndexPage(){
+      return this.COMPLETED_TASKS_COUNT
+    },
   },
 }
 </script>
