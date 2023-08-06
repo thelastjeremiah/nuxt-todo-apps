@@ -17,6 +17,7 @@
         <input-data />
       </div>
     </div>
+    <show-info/>
   </main>
 </template>
 
@@ -35,4 +36,3 @@ export default {
   },
 }
 </script>
-

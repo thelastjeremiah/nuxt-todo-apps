@@ -40,7 +40,7 @@ export default {
   ],
   fontawesome: {
     icons: {
-      solid: ['faHome','faTrash','faCircleCheck','faCirclePlus'],
+      solid: ['faHome','faTrash','faCircleCheck','faCircleXmark'],
     }
   },
   // Modules: https://go.nuxtjs.dev/config-modules

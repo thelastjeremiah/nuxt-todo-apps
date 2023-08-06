@@ -261,6 +261,10 @@ main > p {
   font-size:1.9rem;
 }
 
+.parent-container {
+  position: relative; /* Position relative container */
+}
+
 @media (max-width: 768px) {
   .parent-container{
     padding-left: 1rem;
