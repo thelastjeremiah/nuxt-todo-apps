@@ -1,10 +1,7 @@
 <template>
   <div class="list-of-task-container-parent">
     <div class="list-of-task-container-child">
-      <font-awesome-icon icon="circle-check"  
-      :class="{'check-color-true': toggleDone(), 'check-color-false': !toggleDone()}"
-        @click="toggleDone"
-      />
+      <font-awesome-icon icon="circle-check"   :class="{'check-color-true': task.status, 'check-color-false': !task.status}" @click="toggleDone"/>
       <p class="list-of-taks">{{ task.name }}</p>
       <font-awesome-icon icon="trash" class="font-awesome-trash-icon-red"  @click="removeTask"/>
     </div>
@@ -12,15 +9,19 @@
 </template>
 
 <script>
-import { mapMutations } from 'vuex';
+import { mapState, mapMutations } from 'vuex'
 export default {
   props: ['task'],
+  computed: {
+    ...mapState(['tasks']),
+    task() {
+      return this.tasks.find((task) => task.id === 1) || {}
+    },
+  },
   methods: {
-    ...mapMutations(['TOGGLE_TASK', 'REMOVE_TASK']),
+    ...mapMutations(['REMOVE_TASK','TOGGLE_TASK']),
     toggleDone() {
-      const toggleTask = this.TOGGLE_TASK;
-      toggleTask(this.task);
-      return this.task.status; 
+      this.TOGGLE_TASK(this.task)
     },
     removeTask() {
       const removeTask = this.REMOVE_TASK;
