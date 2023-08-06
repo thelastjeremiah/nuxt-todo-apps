@@ -7,6 +7,7 @@
           <div class="tasks-details-child">
             <tasks/>
             <tasks-done/>
+            <delete-task-done/>
             <tasks-delete-all/>
           </div>
         </div>
