@@ -265,6 +265,56 @@ main > p {
   position: relative; /* Position relative container */
 }
 
+.lower-left {
+  position: absolute;
+  bottom: 20px; 
+  right: 20px;
+}
+
+.show-info-container{
+  background-color: #3584C5;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 1px;
+  padding-bottom: 3px;
+}
+
+.show-info-container:hover{
+  cursor: pointer;
+}
+
+.show-info-container > p {
+  color:white;
+  font-size: 1rem;
+}
+
+.hide-info-contianer > p{
+  color:white;
+  font-weight: bold;
+}
+
+.hide-info-contianer{
+  display: flex;
+  background-color: #00244D;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom:0.4rem;
+  border-radius: 1rem;
+}
+
+
+.x-mark{
+  color:black;
+  font-size: 1.5rem;
+  margin-left: 7px;
+}
+
+.x-mark:hover{
+  color:white;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .parent-container{
     padding-left: 1rem;
@@ -281,5 +331,9 @@ main > p {
 .delete-task-word{
     font-size: 10px;
     padding-right: 1rem;
+  }
+
+  .hide-info-contianer > p{
+    font-size: 13px;
   }
 }
