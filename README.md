@@ -1,4 +1,4 @@
-# nuxt-todo-app
+# nuxt-todo-apps
 
 ## Build Setup
 
