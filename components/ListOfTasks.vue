@@ -1,20 +1,20 @@
 <template>
-  <div class="list-of-task-container-parent">
-    <div class="list-of-task-container-child">
+  <v-card class="margin-list-of-task">
+    <v-row class="no-wrap space-evenly padding-sample" style="padding-left: 0px;padding-right: 0px;margin-left: 0px;margin-right: 0px;">
       <font-awesome-icon icon="circle-check"   :class="{'check-color-true': task.status, 'check-color-false': !task.status}" @click="toggleDone"/>
-      <div class="grid-text-and-icon">
+      <div class="grid-text-and-icon"> 
         <div class="block">
-          <p :class="{'list-of-taks-true': task.status, 'list-of-taks-false': !task.status}" @click="toggleDone">
+          <span :class="{'list-of-taks-true': task.status, 'list-of-taks-false': !task.status}" @click="toggleDone">
             <s v-if="task.status">{{ task.name }}</s>
             <span v-else class="list-status-false">{{ task.name }}</span>
-          </p>
+          </span>
         </div>
         <div class="block">
           <font-awesome-icon icon="trash" class="font-awesome-trash-icon-red"  @click="removeTask"/>
         </div>
       </div>
-    </div>
-  </div>
+    </v-row>
+  </v-card>
 </template>
 
 <script>
@@ -33,3 +33,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+  .padding-sample{
+    padding: 1rem !important;
+  }
+</style>

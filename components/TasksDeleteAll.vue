@@ -1,8 +1,8 @@
 <template>
-  <div class="grid-container-trash" @click="deleteAllTask">
+  <v-card class="grid-container-trash" @click="deleteAllTask">
     <font-awesome-icon icon="trash" class="font-awesome-trash-icon" />
-    <p class="delete-task-word">Tasks</p>
-  </div>
+    <span class="delete-task-word">Tasks</span>
+  </v-card>
 </template>
 
 <script>

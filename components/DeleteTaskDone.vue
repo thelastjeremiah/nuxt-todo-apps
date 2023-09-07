@@ -1,8 +1,8 @@
 <template>
-  <div class="delete-all-done-container" @click="deletDoneTask">
+  <v-card class="delete-all-done-container" @click="deletDoneTask">
     <font-awesome-icon icon="trash" class="font-awesome-trash-icon-delete"/>
-    <p class="delete-task-word">Tasks Done</p>
-  </div>
+    <span class="delete-task-word">Tasks Done</span>
+  </v-card>
 </template>
 
 <script>
@@ -22,7 +22,7 @@ export default {
   display: flex;
   align-content: center;
   align-items: center;
-  background-color: #FF5C46;
+  background-color: #FF5C46 !important;
   margin-right: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;

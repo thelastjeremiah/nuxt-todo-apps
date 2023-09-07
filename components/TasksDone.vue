@@ -1,7 +1,7 @@
 <template>
   <div class="tasks">
-    <p>Tasks Done</p>
-    <p class="circle-number">{{ completedTask }}</p>
+    <span class="task-done">Tasks Done</span>
+    <span class="circle-number">{{ completedTask }}</span>
   </div>
 </template>
 
@@ -17,6 +17,15 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+  .task-done {
+    margin-left: 1rem;
+    margin-right: 0.35rem;
+    color:white;
+  }
+
+  .circle-number {
+    margin: 0.25rem;
+  }
 
 </style>
