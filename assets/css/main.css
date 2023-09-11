@@ -372,4 +372,30 @@ main > p {
   .font-awesome-trash-icon-red {
     padding-left: 7rem;
   }
+
+  .tasks-details-child{
+    flex-direction: column;
+  }
+  .task-details-parent{
+    justify-content: center;
+  }
+  .tasks{
+    margin-bottom: 0.5rem !important;
+    justify-content: center !important;
+  }
+  .task-details-parent{
+    padding-right:0 !important;
+  }
+  .delete-all-done-container{
+    padding: 0.5rem !important;
+    margin-right: 0 !important;
+    justify-content: center !important;
+    margin-bottom: 10px !important;
+  }
+  .delete-task-word{
+    font-size: 1rem !important;
+  }
+  .grid-container-trash{
+    padding:0.2rem;
+  }
 }
