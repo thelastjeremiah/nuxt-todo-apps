@@ -49,16 +49,12 @@ main > p {
 }
 
 .tasks{
-  background-color:#2169B0;
-  display: flex;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  padding-left: 0.1rem;
-  padding-right: 0.1rem;
-  padding-top: 0.125rem; 
-  padding-bottom: 0.125rem; 
-  align-items: center;
-  border-radius: 20px; 
+  background-color: #2169B0 !important;
+  display: flex !important; 
+  margin: 0 1rem !important;
+  padding: 0.125rem 0.1rem !important;
+  align-items: center !important;
+  border-radius: 20px !important;
 }
 
 .tasks > p:first-child {
@@ -76,16 +72,16 @@ main > p {
   height: 1.8rem; 
   line-height: 1.75rem;
   text-align: center; 
-  border-radius: 50%; 
+  border-radius: 50% !important; 
   font-weight:600;
 }
 
 .grid-container-trash {
-  display: grid;
+  display: grid !important;
   grid-template-columns: repeat(2,1fr);
-  background-color: #FF5C46;
-  align-items: center;
-  margin-right: .0629rem;
+  background-color: #FF5C46 !important;
+  align-items: center !important;
+  margin-right: .0629rem !important;
 }
 
 .grid-container-trash:hover{
@@ -121,11 +117,11 @@ main > p {
 }
 
 .accept-input-parent {
-  background-color: rgba(202,194,194,0.91765);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  background-color: rgba(202,194,194,0.91765) !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  position: relative !important;
 }
 
 .accept-input-child {
@@ -169,12 +165,6 @@ main > p {
   align-content: center;
   align-items: center;
 }
-.list-of-task-container-parent {
-  margin-left: 2rem;
-  margin-right: 2rem;
-  padding-bottom: 0.3rem;
-  margin-top: 0.3rem;
-}
 
 .block{
   display: block;
@@ -190,14 +180,21 @@ main > p {
   display: flex;
   align-content: center;
   align-items: center;
-  border: 1px solid #1a1d1c4b;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  border-radius: 0.3125rem;
 }
 
-.list-of-task-container-child:hover {
+.space-evenly:hover{
   background-color: #ededed;
 }
+
+.space-evenly:hover {
+  background-color: #ededed;
+}
+
+.space-evenly:hover .font-awesome-trash-icon-red {
+  color: #ff5c46;
+}
+
+
 
 .list-of-task-container-child:hover .font-awesome-trash-icon-red{
   color: #ff5c46 !important;
@@ -275,15 +272,17 @@ main > p {
   background-color: #3584C5;
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 1px;
-  padding-bottom: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-.show-info-container:hover{
+.space-evenly:hover{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   cursor: pointer;
 }
 
-.show-info-container > p {
+.show-info-container > span {
   color:white;
   font-size: 1rem;
 }
@@ -299,8 +298,8 @@ main > p {
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.4rem;
-  padding-bottom:0.4rem;
   border-radius: 1rem;
+  padding-bottom: 0.4rem;
 }
 
 
@@ -313,6 +312,35 @@ main > p {
 .x-mark:hover{
   color:white;
   cursor: pointer;
+}
+
+
+.margin-list-of-task{
+  margin: 1rem;
+}
+
+.no-wrap{
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+
+.font-size-big{
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.task-text{
+  color:white;
+}
+
+.space-evenly{
+  justify-content: space-evenly;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px
 }
 
 @media (max-width: 768px) {
@@ -335,5 +363,39 @@ main > p {
 
   .hide-info-contianer > p{
     font-size: 13px;
+  }
+
+  .no-wrap{
+    flex-wrap: nowrap !important;
+  }
+
+  .font-awesome-trash-icon-red {
+    padding-left: 7rem;
+  }
+
+  .tasks-details-child{
+    flex-direction: column;
+  }
+  .task-details-parent{
+    justify-content: center;
+  }
+  .tasks{
+    margin-bottom: 0.5rem !important;
+    justify-content: center !important;
+  }
+  .task-details-parent{
+    padding-right:0 !important;
+  }
+  .delete-all-done-container{
+    padding: 0.5rem !important;
+    margin-right: 0 !important;
+    justify-content: center !important;
+    margin-bottom: 10px !important;
+  }
+  .delete-task-word{
+    font-size: 1rem !important;
+  }
+  .grid-container-trash{
+    padding:0.2rem;
   }
 }

@@ -1,24 +1,28 @@
 <template>
-  <main class="parent-container">
-    <p>Vue ToDo List</p>
-    <div class="todo-parent-container">
-      <div class="todo-child-continer">
-        <div class="task-details-parent">
-          <div class="tasks-details-child">
-            <tasks/>
-            <tasks-done/>
-            <delete-task-done v-if="completedTaskIndexPage > 0" />
-            <tasks-delete-all/>
+  <v-app class="app-bg">
+    <v-main>
+      <v-container class="d-flex justify-center align-center container-height">
+        <v-col cols="12" sm="6">
+          <todo-title />
+          <div class="todo-child-continer">
+            <div class="task-details-parent">
+              <div class="tasks-details-child">
+                <tasks/>
+                <tasks-done/>
+                <delete-task-done v-if="completedTaskIndexPage > 0" />
+                <tasks-delete-all/>
+              </div>
+            </div>
+            <div class="scrollable-wrapper">
+              <list-Of-Tasks v-for="(task, id) in listofAllTask" :key="id" :task="task" class="animate__animated animate__fadeInUp"/>
+            </div>
+            <input-data />
           </div>
-        </div>
-        <div class="scrollable-wrapper">
-          <list-Of-Tasks v-for="(task, id) in listofAllTask" :key="id" :task="task" class="animate__animated animate__fadeInUp"/>
-        </div>
-        <input-data />
-      </div>
-    </div>
+        </v-col>
+      </v-container>
+    </v-main>
     <show-info/>
-  </main>
+  </v-app>
 </template>
 
 <script>
@@ -36,3 +40,12 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+  .app-bg{
+    background:#12121200 !important
+  }
+  .container-height{
+    height: 100vh;
+  }
+</style>
